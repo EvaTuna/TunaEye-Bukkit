@@ -1,0 +1,6 @@
+name: TunaEye-Bukkit
+version: @app.version@
+description: TunaEye Bukkit Wrapper
+authors: [B4TT3RY__]
+api-version: 1.14
+main: kr.b4tt3ry.tunaeye.Main
