@@ -1,6 +1,5 @@
 package kr.b4tt3ry.tunaeye
 
-import com.google.gson.GsonBuilder
 import kr.b4tt3ry.tunaeye.objects.Config
 import kr.b4tt3ry.tunaeye.objects.toObject
 import org.bukkit.plugin.java.JavaPlugin
@@ -21,7 +20,7 @@ class Main: JavaPlugin() {
         if (configFile.exists()) {
             Main.config = configFile.readText().toObject()
         } else {
-            File(dataFolder, "config.json").createNewFile()
+            configFile.createNewFile()
             Main.config = Config()
         }
         configFile.writeText(Main.config.toPrettyJSON())
