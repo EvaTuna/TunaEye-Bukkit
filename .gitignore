@@ -1,0 +1,15 @@
+.DS_Store
+out/
+build/
+.gradle/
+gradle/
+!**/src/**/build
+!**/test/**/build
+/bin
+/.idea
+*.iml
+.classpath
+.project
+.externalToolBuilders
+gradlew
+gradlew.bat
