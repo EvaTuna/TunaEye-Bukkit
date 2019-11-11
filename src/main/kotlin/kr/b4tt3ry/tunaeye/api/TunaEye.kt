@@ -15,7 +15,7 @@ class TunaEye {
             for (destination in destinations) {
                val jsonObject = JsonObject()
                 jsonObject.addProperty("type", destination.type.toString())
-                jsonObject.addProperty("target", destination.target.joinToString(", "))
+                jsonObject.addProperty("target", destination.target)
                 jsonArray.add(jsonObject)
             }
             val json = JsonObject()
